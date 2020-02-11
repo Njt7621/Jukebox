@@ -22,6 +22,12 @@ public class TestSong {
         assertEquals("Pneuma", song2.getSong());
     }
 
+    private void assertEquals(String pneuma, Object song) {
+    }
+
+    private void assertNotEquals(Song song1, Song song4) {
+    }
+
     @Test
     public void testSongEquals() {
         Song song1 = new Song("Adele", "Rolling in the Deep");
@@ -33,6 +39,7 @@ public class TestSong {
         assertNotEquals(song1, song3);
         assertNotEquals(song1, song4);
     }
+
 
     @Test
     public void testSongHashCode() {
@@ -54,5 +61,8 @@ public class TestSong {
         assertTrue(song1.compareTo(song2) == 0);
         assertTrue(song1.compareTo(song3) > 0);
         assertTrue(song4.compareTo(song3) < 0);
+    }
+
+    private void assertTrue(boolean b) {
     }
 }
