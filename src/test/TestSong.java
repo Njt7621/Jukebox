@@ -3,7 +3,9 @@ package test;
 import jukebox.Song;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * JUnit test framework for the jukebox.Song class.
@@ -22,11 +24,14 @@ public class TestSong {
         assertEquals("Pneuma", song2.getSong());
     }
 
-    private void assertEquals(String pneuma, Object song) {
-    }
+    //private void assertEquals(int pneuma, Object song) {
+    //}
 
-    private void assertNotEquals(Song song1, Song song4) {
-    }
+    //private void assertNotEquals(Song song1, Song song4) {
+    //}
+
+    //private void assertTrue(boolean b) {
+    //}
 
     @Test
     public void testSongEquals() {
@@ -63,6 +68,4 @@ public class TestSong {
         assertTrue(song4.compareTo(song3) < 0);
     }
 
-    private void assertTrue(boolean b) {
-    }
 }

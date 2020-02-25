@@ -1,5 +1,6 @@
 package jukebox;
 
+
 /**
  * A Song whose instances can be compared by artist, then by song.
  */
@@ -22,6 +23,7 @@ public class Song implements Comparable< Song > {
     }
     /** artist accessor */
     public String getArtist() {
+
         return artist;
     }
 
