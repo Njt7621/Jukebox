@@ -24,15 +24,6 @@ public class TestSong {
         assertEquals("Pneuma", song2.getSong());
     }
 
-    //private void assertEquals(int pneuma, Object song) {
-    //}
-
-    //private void assertNotEquals(Song song1, Song song4) {
-    //}
-
-    //private void assertTrue(boolean b) {
-    //}
-
     @Test
     public void testSongEquals() {
         Song song1 = new Song("Adele", "Rolling in the Deep");
